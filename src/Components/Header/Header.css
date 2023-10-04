@@ -1,0 +1,18 @@
+.background-image {
+  background-image: url(../../assets/backgroundImg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: darken;
+  position: relative;
+  isolation: isolate;
+}
+
+.background-image::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  opacity: 0.7;
+  background-color: black;
+}
