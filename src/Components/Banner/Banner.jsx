@@ -1,4 +1,5 @@
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import sajek from "../../assets/Sajek.png";
 import Sreemangal from "../../assets/Sreemongol.png";
 import Sundarbans from "../../assets/sundorbon.png";
@@ -8,7 +9,7 @@ const Banner = () => {
     <div className="hero min-h-[88.1vh]">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="carousel carousel-center rounded-box gap-9 ">
-          <div className="carousel-item relative ">
+          <Link className="carousel-item relative ">
             <img
               className="h-[400px] hover:border-4 border-yellow-600 rounded-3xl"
               src={sajek}
@@ -17,7 +18,7 @@ const Banner = () => {
             <p className="absolute bottom-0 left-0 right-0 text-white text-4xl font-bebas p-4 text-left">
               Sajek
             </p>
-          </div>
+          </Link>
           <div className="carousel-item relative">
             <img
               className="h-[400px] hover:border-4 border-yellow-600 rounded-3xl"

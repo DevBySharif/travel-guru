@@ -1,10 +1,16 @@
 import { Outlet } from "react-router-dom";
-import Header from "../Components/Header/Header";
+import Banner from "../Components/Banner/Banner";
+import Navbar from "../Components/Navbar/Navbar";
+import "./Mainlayout.css";
 
 const MainLayout = () => {
   return (
-    <div className="mx-auto">
-      <Header></Header>
+    <div>
+      <div className="background-image">
+        <Navbar />
+        <Banner></Banner>
+      </div>
+
       <Outlet></Outlet>
     </div>
   );

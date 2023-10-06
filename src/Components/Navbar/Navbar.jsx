@@ -1,5 +1,5 @@
 import { FaSearch } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/logo.svg";
 
 const Navbar = () => {
@@ -21,7 +21,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar w-[1400px] mx-auto pt-6">
+    <div className="navbar  mx-auto pt-6">
       <div className="navbar-start">
         <div className="dropdown ">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -68,9 +68,11 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <button className="bg-[#F9A51A] font-montserrat text-base font-medium py-3 px-7 rounded-md">
-          Button
-        </button>
+        <Link to="/login">
+          <button className="bg-[#F9A51A] font-montserrat text-base font-medium py-3 px-7 rounded-md">
+            Login
+          </button>
+        </Link>
       </div>
     </div>
   );
